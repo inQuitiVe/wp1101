@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: black;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 10%;
+    background-size: 10%;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.font1{
+    font-family:"Comic Sans", Comic Sans MS, cursive;
+    font-size:40;
+    line-height: 130px;
+    height: 50px;
+    color: white;
+}
+.font2{
+    font-family:"Comic Sans", Comic Sans MS, cursive;
+    font-size:10;
+    line-height: 40px;
+    color: white;
+}
+
+.font3{
+    color: #fdf6f6;
+}
+
+.border{
+    background-image: url("capy_bg.png");
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height:5vh;
+    width:100vw;
+    transition: transform 3s ease;
+
+}
+
+.border:hover {
+    transform: translateX(-100%);
+}
+
+.background{
+    position:relative;
+    width : 100%;
+}
+
+.capy_bg{
+    position: absolute;
+    height : 60vh;
+    left : 25vw;
+    z-index: 0;
+    top: 40vh;
+    transition: transform 0s ease;
+}
+
+
+
+.grid1{
+    position: relative;
+    padding-right:10vw;
+    margin-left:20vw;
+    text-align: right;
+    right: 1vw;
+    top: 0%;
+
+}
+
+.scroll {
+    float: right;
+    margin-left:20vw;
+    background: black;
+    width: 95%;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bar{
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    height: 30px;
+    width: 100px;
+    font-size: 15 ;
+    color: aliceblue;
+    
+}
+.bar2{
+    position: absolute;
+    top: 55vh;
+    left: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 20%;
+    font-size: 15;
+    color: aliceblue;
+}
+.bar3{
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 20%;
+    font-size: 15;
+    color: aliceblue;
+}
+.bar4{
+    position: absolute;
+    top: 65vh;
+    left: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 20%;
+    font-size: 15;
+    color: aliceblue;
+}
+
+.image1{
+    transition: transform 0.05s ease;
+    width: 9vw;
+
+}
+
+.image2{
+    transition: transform 0.05s ease;
+    width: 9vw;
+}
+
+.image3{
+    transition: transform 0.05s ease;
+    width: 9vw;
+}
+
+.grid1:hover .image3, .grid:focus .image3 {
+    transform: scale(4) translateX(-90%);
+    transform-origin:top right;
+    box-shadow: 1px 1px 1px 1px rgb(70, 70, 71), /* inner white */ 3px 3px 3px 3px rgb(51, 50, 51),
+        /* middle magenta */ 6px 6px 6px 6px rgb(29, 29, 29); /* outer cyan */
+}
+
+.grid1:hover .image2, .grid:focus .image2 {
+    transform: scale(4) translateX(-90%);
+    transform-origin:right;
+    box-shadow: 1px 1px 1px 1px rgb(70, 70, 71), /* inner white */ 3px 3px 3px 3px rgb(51, 50, 51),
+        /* middle magenta */ 6px 6px 6px 6px rgb(29, 29, 29); /* outer cyan */
+}
+
+.grid1:hover .image1, .grid:focus .image1 {
+    transform: scale(4) translateX(-90%);
+    box-shadow: 1px 1px 1px 1px rgb(70, 70, 71), /* inner white */ 3px 3px 3px 3px rgb(51, 50, 51),
+        /* middle magenta */ 6px 6px 6px 6px rgb(29, 29, 29); /* outer cyan */
+    transform-origin:bottom right;
+
+}
+
+.scroll:hover .capy_bg, .grid:focus .capy_bg {
+    transform: translateX(-300%);
+}
+
+
+
