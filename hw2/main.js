@@ -162,14 +162,10 @@ function search(){
     idx = album[current_album].length;
     add_picture(idx);
     img_color[idx].src = links;
-    if(!img_color[idx].complete){
-        alert("add link : "+links+" fails");
-        img_color[idx].remove();
-    }
-    else{
-        album[current_album].push(links);
-        alert("add link : "+links+" succeeds");
-    }
+    album[current_album].push(links);
+    alert("add link : "+links);
+    
+    
 
 }
 function count(){
@@ -177,8 +173,6 @@ function count(){
 }
 
 function delete_img(){
-    img_color[last_idx].remove();
-    console.log(last_idx);
     album[current_album].splice(last_idx,1);
     alert("image deleted");
     change_album(current_album);
