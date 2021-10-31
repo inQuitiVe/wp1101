@@ -1,4 +1,9 @@
 # wp1101
-- Class Website: https://wp.ee.ntu.edu.tw
-- Info: [Link](https://hackmd.io/9H-sQ4krS_CgTsVr2BflRQ?view)
-- Webex Meeting Link: [Link](https://ntucc.webex.com/meet/cyhuang)
+功能介紹
+1. hover 標題分隔線的一排水豚君，他們會往左跑光在退回來。
+2. 右上方的白色格可輸入想加入的圖片網址，按下"+"便會加入該相簿中。
+3. 右上方的垃圾桶可以刪除當前相簿點選的該張照片，即使切換相簿後再切回來仍不會出現。
+4. 左方有三個相簿可供選擇，hover時會進行填滿，按下後會變為藍色框眶，表示已選擇。第四個相簿為空白相簿，點擊後會出現alert。
+5. 中間為大圖。
+6. 右方為預覽圖，hover時會放大暈邊，點擊後會變成藍框。
+7. 下方為相片記數，分別為 該相簿的第幾張相片 / 相簿相片總數 / 總相片數

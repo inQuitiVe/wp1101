@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Photo Album</title>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="styles.css"
+  />
+</head>
+
+	<body>
+		<div class="title">	
+			<div class="search">
+					
+					<input type="text" id="links" size = "15">
+					<img src="plus.png" class = "icon" onclick= "search()" >
+					<img src="delete.png" class = "icon" onclick= "delete_img()">
+					
+
+			</div>
+			
+			<div class="slogan">
+				<p class="font1">
+					Chiu's Album
+				</p>
+				<p class="font2">
+					&ensp;A Stan of Capybara
+				</p>
+				
+			</div>
+
+		</div>
+
+
+	<div class='border'></div>
+
+	
+	<div class="bar">
+		<div class="bar1" onclick = "change_album(0)">
+			<p class="bar_border" id = "album0">
+				&ensp;&ensp;Capybara
+			</p>
+		</div>
+
+		<div class="bar2" onclick = "change_album(1)">
+			<p class="bar_border" id = "album1">
+				&ensp;&ensp;Cat
+			</p>
+		</div>
+
+		<div class="bar3" onclick = "change_album(2)">
+			<p class="bar_border" id = "album2">
+				&ensp;&ensp;Dog
+			</p>
+		</div>
+
+		<div class="bar4" onclick = "alert('空相簿')">
+			<p class="bar_border">
+				&ensp;&ensp;
+			</p>
+		</div>
+	</div>
+
+	<div class="scroll" id = "scroll">
+		<img class="capy_bg" src="" id = "display">
+	</div>
+
+	<div class = "count">
+		<p id = "count" class = "font1"></p>
+	</div>
+
+	<script src="main.js"></script>
+  </body>
+</html>
