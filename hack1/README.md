@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# 110-1 Web Programming In-Class Hackathon #1 -- README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+## A simple MineSweeper game made with ReactJS. 
 
-## Available Scripts
+* [Problem Description](https://reurl.cc/aNX319)
+* [Demo video](https://youtu.be/mDx4bi-rA-Q)
+* Ref code: [hack1.tgz](https://drive.google.com/file/d/1-PlxV_C786hsdfGic-dTUyZ9OrgkAWdZ/view?usp=sharing) | [hack1.zip](https://drive.google.com/file/d/1S7n5IhWQtLJ-EbmmN3h5vlF4AF3cHCd1/view?usp=sharing)
 
-In the project directory, you can run:
+## Getting Started (Before class)
 
-### `yarn start`
+* Install packages. Please refer to this [pre-README](https://hackmd.io/3Qi1oxmkTl2uIman32U-7g?view)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started (In class)
 
-### `yarn test`
+### 1. Download the problem description slides
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Slides (hack1_problem_description.pdf): [link](https://reurl.cc/aNX319)
+* TA will go through it on [Webex Meeting Room](https://ntucc.webex.com/meet/cyhuang) at 9:10am.
 
-### `yarn build`
+### 2. Download the reference code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [hack1.tgz](https://drive.google.com/file/d/1-PlxV_C786hsdfGic-dTUyZ9OrgkAWdZ/view?usp=sharing) | [hack1.zip](https://drive.google.com/file/d/1S7n5IhWQtLJ-EbmmN3h5vlF4AF3cHCd1/view?usp=sharing)
+* Copy *hack1.tgz* or *hack1.zip* (pick one) to "*wp1101/hack1*" directory and uncompress it there.
+* Please note that in some machines you will see that a new directory is created and all the files are uncompressed there. In such case, please move all the files to its parent directory "wp1101/hack1".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Sign-in Hackathon #1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Go to this Ceiba Voting event "[In-Class Hackathon #1 Sign in](https://ceiba.ntu.edu.tw/modules/index.php?csn=fdb723&default_fun=vote)"" to vote any option for signing in the in-class hackathon. 
+* For signing-out, just push your code to GitHub.
 
-### `yarn eject`
+### 4. If you have any question...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* First go to this [Hack#1 Q&As repo](https://github.com/ntuee-webprogramming/hack1-QAs) to check if your question has been asked and answered (in some issue).
+* If not, create a new issue with clear title and description.
+* Please refer to this tutorial for the usage of GitHub issue (https://bit.ly/3bbIfc0).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 5. If you encounter a personal issue/problem that cannot be resolved in GitHub issue...
+* You can TAG a TA or express your need in GitHub issue, and **TA will invite you** to his/her Google Meet for online Q&As. 
+* **PLEASE DO NOT GO TO TA's Google Meet WITHOUT TA's INVITATION!!**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 6. Announcements during the Hackathon
+* Please follow this [FB post](https://www.facebook.com/groups/NTURicWebProg/posts/1511691302512118/) (will also announce on Ceiba)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 7. Testing your code:
+* We will use "cypress" to automatically test and grade your code, so you are advised to install "cypress" in advance so that you can run automatic tests during the tests. 
+* If you fail to install, please resolve it ASAP. However, if you really can't install it on your computer due to machine, OS version, or some other issues, it is OK. You can still manually test your codes by referring to our test program in the reference code. TAs will test your code in their own machines so this won't be an issue -- Just make sure you name the variables/classes/IDs exactly the same as defined in the problem description.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 8. Webex Meeting Room is for emergency announcement only during the hackathon.
+* It will/should be remain silent after the problem introduction.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Start hacking!!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Deadline: 12:10pm, Tuesday, 11/02/2021
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
