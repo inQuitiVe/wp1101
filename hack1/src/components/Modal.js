@@ -17,9 +17,24 @@ export default function Modal({restartGame, backToHome, win}){
         }, 1000);
     }, []);
 
+    var a,b;
+    if(win){a = 'WIN';b = 'New Game'}
+    else {a = 'Game Over'; b='Try Again'}
+
     return (
-        {/* -- TODO 5-1 -- */}
+        /* -- TODO 5-1 -- */
         /* Useful Hint: style = {{opacity: 1 or 0 }} */
+        <div className = 'modal' >
+            <div className = 'modalWrapper'></div>
+            <div className = 'modalContent'>
+                <div className='modalResult'>{a}</div>
+                <div className='modalBtnWrapper'>
+                    <div className='modalBtn'>{b}</div>
+                    <div className='modalBtn'>Back to Home</div>
+                </div>
+            </div>
+            <div className = 'modalWrapper'></div>
+        </div>
         
     );
 }

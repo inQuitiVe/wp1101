@@ -51,10 +51,48 @@ export default (boardSize, mineNum) => {
     }
 
     {/* -- TODO 2 -- */}
+    for(let x = 0; x < boardSize; x++){
+        for(let y = 0; y < boardSize; y++){
+            if(board[x][y].value!='💣'){
+                if(x>0){
+                    if(board[x-1][y].value === '💣')
+                        board[x][y].value+=1;
+                    if(y>0){
+                        if(board[x-1][y-1].value === '💣')
+                            board[x][y].value+=1;
+                    }
+                    if (y<boardSize-1)
+                        if(board[x-1][y+1].value === '💣')
+                            board[x][y].value+=1;
+                }
+                if(x<boardSize-1) {
+                    if(board[x+1][y].value === '💣')
+                    board[x][y].value+=1;
+                    if(y>0){
+                        if(board[x+1][y-1].value === '💣')
+                            board[x][y].value+=1;
+                    }
+                    if (y<boardSize-1)
+                        if(board[x+1][y+1].value === '💣')
+                            board[x][y].value+=1;
+                }
+                if(y>0){
+                    if(board[x][y-1].value === '💣')
+                        board[x][y].value+=1;
+               } 
+               if(y<boardSize-1) {
+                if(board[x][y+1].value === '💣')
+                     board[x][y].value+=1;}
+
+            }
+
+        }
+    }
     {/* Useful Hints: Calculate and update the value of each cell in the board. The value means the number of mines adjacent to the cell. */}
     {/* Reminder: Some cells in the board do not have "Top" position, some do not have "Top-Right" position .... */}
     {/* Warning: The value of any cell will not be bigger than 8 logically. */}
     {/* Testing: printBoard() */}
+    printBoard()
 
 
     return { board, mineLocations };

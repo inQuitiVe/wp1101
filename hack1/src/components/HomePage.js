@@ -21,8 +21,10 @@ const HomePage = ({startGameOnClick, mineNumOnChange, boardSizeOnChange, mineNum
       <div className = 'HomeWrapper'>
           <p className = 'title'>MineSweeper</p>
             {/* -- TODO 1-1 -- */}
+          <button className='btn' onClick = {startGameOnClick}>Start Game</button>
           
             {/* -- TODO 6-2 -- */}
+            {/* <button className='btn'>Difficulty Adjustment</button> */}
             {/* Useful Hint: <input type = 'range' min = '...' max = '...' defaultValue = '...'> */}
             {/* Useful Hint: Error color: '#880000', default text color: '#0f0f4b', invisible color: 'transparent' */}
             {/* Reminder: The defaultValue of 'mineNum' is 10, and the defaultValue of 'boardSize' is 8. */}

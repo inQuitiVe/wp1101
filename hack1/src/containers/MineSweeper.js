@@ -19,7 +19,7 @@ const MineSweeper = () => {
     {/* Useful Hint: The four functions below only need to fill up with those three hook functions above. */}
     {/* -- TODO 1-2 -- */}
     const startGameOnClick = () => {
-        
+        setStartGame(true)
     }
     {/* -- TODO 6-2 -- */}
     const mineNumOnChange = () => {
@@ -34,12 +34,19 @@ const MineSweeper = () => {
         
     }
 
+    let Switch;
+    if(!startGame){
+        Switch=<HomePage startGameOnClick = {startGameOnClick}/>;
+        } 
+    else {Switch = <Board boardSize = {boardSize} mineNum = {mineNum}/>;}
+
+
     return( 
         <div className='mineSweeper'>  
             {/* -- TODO 1-1 -- */} 
             {/* Useful Hint: If ... <HomePage startGameOnClick = {startGameOnClick} .../> else <Board .../> */}
             {/* Reminder: You can refer to the structure file in p.6 of Hack1.pdf. */}
-             
+            {Switch}
         </div>
     );
 }
