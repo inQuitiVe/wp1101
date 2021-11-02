@@ -111,7 +111,7 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
             if (count === nonMineCount) setWin(true)
         }
     }
-        
+    console.log(remainFlagNum);
     };
 
     return(
