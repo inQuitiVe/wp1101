@@ -93,9 +93,11 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
             setBoard(buffer);
             setGameOver(true);
         }
+    
         else {
             var buffer2 =board;
             buffer2[x][y].revealed=true; 
+            //setNonMineCount(nonMineCount+1);
             if (buffer2[x][y].flagged===true){
                 buffer2[x][y].flagged=false;
                 setRemainFlagNum(remainFlagNum-1);
@@ -110,14 +112,20 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
             }
             if (count === nonMineCount) setWin(true)
         }
-    }
+    
     console.log(remainFlagNum);
+        }
     };
+    var a;
+    if((win === true) || (gameOver === true)){
+        a = <Modal restartGame={() => restartGame()} backToHome={() => backToHome} win={win}/>
+    }
+    else a = null
 
     return(
         <div className = 'boardPage' >
             <div className = 'boardWrapper' >
-            
+            {a}
             <h1>This is the board Page!</h1>  {/* This line of code is just for testing. Please delete it if you finish this function. */}
             {/* {console.log(createBoard(10, 5))} */}
             {/* -- TODO 3-1 -- */}
@@ -126,9 +134,9 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
             <div className='boardContainer'>
                 <Dashboard remainFlagNum={remainFlagNum} gameOver={gameOver}/>
                 {board.map((item,index_x)=>
-                    <div id = {'row'+index_x} style = {{display:'flex'}}>
+                    <div id = {'row'+index_x} key = {index_x} style = {{display:'flex'}}>
                         {item.map((cell,index_y) => 
-                        <Cell key = {index_x + '_' +index_y} rowIdx={index_x} colIdx={index_y} detail={cell} updateFlag={(e)=>updateFlag(e,index_x,index_y)} revealCell={(e) => revealCell(index_x,index_y)}/>     
+                        <Cell id = {index_x + '_' +index_y}  key = {8*index_x+index_y} rowIdx={index_x} colIdx={index_y} detail={cell} updateFlag={(e)=>updateFlag(e,index_x,index_y)} revealCell={(e) => revealCell(index_x,index_y)}/>     
                         )}
                     </div>
                     

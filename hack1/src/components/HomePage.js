@@ -10,9 +10,9 @@ import React, { useState } from 'react';
 import './css/HomePage.css';
 
 {/* -- TODO 2 -- */}
-const HomePage = ({startGameOnClick, mineNumOnChange, boardSizeOnChange, mineNum, boardSize /* -- something more... -- */}) => {
-    const [showPanel, setShowPanel] = useState(false);      // A boolean variable. If true, the controlPanel will show.
-    const [error, setError] = useState(false);              // A boolean variable. If true, means that the numbers of mines and the board size are invalid to build a game.
+  const HomePage = ({startGameOnClick, mineNumOnChange, boardSizeOnChange, mineNum, boardSize /* -- something more... -- */}) => {
+  const [showPanel, setShowPanel] = useState(false);      // A boolean variable. If true, the controlPanel will show.
+  const [error, setError] = useState(false);              // A boolean variable. If true, means that the numbers of mines and the board size are invalid to build a game.
 
     {/* Some functions may be added here! */}
     
