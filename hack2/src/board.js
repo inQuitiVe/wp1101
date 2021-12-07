@@ -16,7 +16,7 @@ function Board(props) {
       setPosts(post)
     }
     Renew()
-  }, [posts])
+  }, [])
   
   return (
     <>
