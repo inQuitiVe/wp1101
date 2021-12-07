@@ -10,10 +10,10 @@ function Board(props) {
   // TODO 2-(2): fetch all posts from database
   useEffect(() => {
     const Renew = async() =>{
-      const {data:{msg ,pst},} = await instance.get('/allPosts',{});
-      console.log(msg);
-      if (msg === 'success')
-      setPosts(pst)
+      const {data:{message ,post},} = await instance.get('/allPosts',{});
+      console.log(message);
+      if (message === 'success')
+      setPosts(post)
     }
     Renew()
   }, [posts])
