@@ -12,7 +12,7 @@ function Post(props) {
 
   // TODO 3-(2): complete getPostDetail function to get the full information of a post from database
   const getPostDetail = async() =>{
-    const {msg ,pst} = await instance.get('/postDetail')
+    const {msg ,pst} = await instance.get('/postDetail',pid)
     console.log({msg,pst});
     if (msg === 'success'){
           setData(pst)
@@ -28,9 +28,9 @@ function Post(props) {
   }
 
   // TODO 3-(2): fetch the full information of a post from database
-  useEffect(() => {
+  useEffect(() => 
     getPostDetail()
-  }, [])
+  )
   
   return (
     <div className="article-wrapper">
