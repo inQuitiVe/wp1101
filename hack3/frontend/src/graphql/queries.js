@@ -7,6 +7,9 @@ export const GET_TASKS_QUERY = gql`
       dueDate
       id
       status
+      title
+      content
+      status
     }
   }
 `;

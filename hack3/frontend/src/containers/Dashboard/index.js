@@ -12,7 +12,7 @@ import {
   TASK_CREATED_SUBSCRIPTION,
   TASK_UPDATED_SUBSCRIPTION,
   // TODO 6.5 Uncomment the following line
-  // TASK_DELETED_SUBSCRIPTION,
+  TASK_DELETED_SUBSCRIPTION,
 } from "../../graphql";
 import { useQuery, useMutation } from "@apollo/client";
 // constants
@@ -78,6 +78,7 @@ export default function Dashboard() {
   // subscription to task deleted
   useEffect(() => {
     // TODO 6.5 subscription logic
+    
   }, [subscribeToMore]);
 
   // graphql mutation function
@@ -90,6 +91,12 @@ export default function Dashboard() {
   const handleUpdateTask = (id, status) => {
     // Call graphql mutation function
     // TODO 3 Use `updateTask` and pass the correct variables
+    updateTask({
+      variables:{
+        id:id,
+        status:status
+      }
+    })
   };
 
   // drag and drop
