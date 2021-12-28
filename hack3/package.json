@@ -12,6 +12,5 @@
     "cypress": "^9.2.0",
     "dotenv-defaults": "^3.0.0",
     "mongoose": "^6.1.4"
-    
   }
 }
