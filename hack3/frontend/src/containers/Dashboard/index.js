@@ -91,8 +91,6 @@ export default function Dashboard() {
             if (task.id !== subscriptionData.data.taskDeleted) return true;
             else return false;
           }),
-
-        
         };
 
       },
