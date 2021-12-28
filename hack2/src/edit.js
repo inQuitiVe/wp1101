@@ -14,12 +14,12 @@ function Edit(props) {
     const buffer = content.trim()
     const id = uuidv4()
     const Post = async() =>{
-      const {msg} = await instance.post('/newPost',{
+      const {message} = await instance.post('/newPost',{
         id,
         buffer,
         title
       })
-      console.log(msg);
+      console.log(message);
     }
     console.log(buffer);
     if (buffer !== ''){
