@@ -1,5 +1,5 @@
 import express from 'express'
-import User from '../Components/User'
+import User from '../../Components/User'
 const router = express.Router();
 
 router.get('/signin', async (req, res) => {

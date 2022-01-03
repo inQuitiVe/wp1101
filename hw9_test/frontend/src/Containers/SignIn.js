@@ -2,7 +2,7 @@ import { Button, Input } from 'antd';
 import { UserOutlined } from '@ant-design/icons'
 import { Fragment } from 'react';
 import { useState } from 'react';
-import axios from './prev'
+import axios from '../axios'
 const SignIn = ({me , setMe, setSignedIn, displayStatus }) => {
     const [password, setPass] = useState('');
     const [mode, setMode] = useState(true); // true means sign in , false means sign up

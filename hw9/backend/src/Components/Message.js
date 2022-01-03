@@ -2,11 +2,23 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
-const MessageSchema = new Schema({
-    sender: { type: mongoose.Types.ObjectId, ref: "User" },
-    body: { type: String, required: true },
-});
-  
+const MessageSchema = new Schema(
+    {
+        name : {
+            type : String, 
+            required: [true, 'Name field is required']
+        },
+        body: {
+            type : String,
+            required: [true, 'Body field is required']
+        },
+        group : {
+            type : String,
+            required: [true, 'Group field is required.']
+        },
+    }
+)
+
 const Message = mongoose.model('message', MessageSchema)
 
 export default Message;
